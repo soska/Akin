@@ -1,0 +1,11 @@
+{
+    "name": "akin"
+  , "version": "1.0.0"
+  , "description": "Simple Sharing Library"
+  , "homepage": "http://github.com/soska/akin"
+  , "author": "Armando Sosa"
+  , "dependencies": {
+      "uglify-js": ">=1.3.0"
+    }
+  , "engines": { "node": ">= 0.6.0" }
+}

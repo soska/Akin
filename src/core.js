@@ -8,9 +8,14 @@
 
 var Akin = window.Akin = function ( service, o ){
   o = o || {};
+
   o.url = o.url || window.location.href;
   o.title = o.title || document.title;
   this.settings = o;
+
+  if (this.settings[service] == undefined) {
+    this.settings[service] = {};
+  }
   
   if ( typeof this[service] !== "undefined" ) {
     this[service]();
@@ -32,3 +37,5 @@ Akin.fn.share = function(){
     window.open( this.share_url );      
   }
 };
+
+

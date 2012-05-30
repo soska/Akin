@@ -16,4 +16,5 @@
     });
   }
   
-})(jQuery);
+})(this.jQuery || this.Zepto);
+

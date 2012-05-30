@@ -58,6 +58,6 @@ function read( file, fn ) {
 
 // build em!
 next( 0, function(){
-  exec( 'uglifyjs -o akin.min.js akin.js' );
+  exec( './node_modules/.bin/uglifyjs -o akin.min.js akin.js' );
   console.log("\n\n akin.js finished");
 });
